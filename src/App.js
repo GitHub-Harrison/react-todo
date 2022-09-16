@@ -19,6 +19,7 @@ function App() {
     localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(todos))
   }, [todos])
 
+  // toggle if todo has been completed or not
   function toggleTodo(id) {
     // create a copy of todos
     const newTodos = [...todos]
